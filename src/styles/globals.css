@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Other Colors */
+  --color-white: #FFFFFF;
+  
+  /* Tiny color */
+  --color-tiny-grey: #AAAAAA;
+  --color-tiny-white: #F9F9F9;
+
+  /* bg color */
+  --color-bg-base: #151515;
+  --color-bg-select: #424242;
+  --color-bg-unselect: #212121;
+  --color-bg-hover: #3B3B3B;
+}
