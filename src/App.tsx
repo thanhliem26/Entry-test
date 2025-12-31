@@ -59,7 +59,7 @@ function App() {
         <div className="flex justify-between items-center">
           <span className="text-xs text-text-primary font-normal ">Value</span>
           <div className="w-[140px] h-[36px] bg-background-unselect flex rounded-lg transition-colors duration-200 has-[input:hover]:bg-background-hover">
-            <Tooltip content={unit === Unit.PERCENT ? 'Value must greater than 0' : ''} position="top">
+            <Tooltip content={unit === Unit.PERCENT && Number(value) === 0 ? 'Value must greater than 0' : ''} position="top">
               <button
                 className={clsx(
                   'w-9 h-9 text-text-secondary text-xs flex items-center justify-center cursor-pointer hover:bg-background-hover rounded rounded-tl-lg rounded-bl-lg',
